@@ -1,0 +1,16 @@
+[package]
+name = "roguewasm"
+version = "0.1.0"
+authors = ["Frank Parejo <francisco.parejo.lopez@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+serde = "1.0.126"
+serde_derive = "1.0.126"
+
+[dependencies.wasm-bindgen]
+version = "0.2.74"
+features = ["serde-serialize"]

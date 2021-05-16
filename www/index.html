@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rogue WebAssembly</title>
+    <style>
+        .row {
+            flex-direction: column;
+            display: flex;
+        }
+        .row-cell {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="row-cell" style="text-align: center;">
+            <h1>Rogue WebAssembly</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row-cell" id="rogue-canvas">
+        </div>
+        <div class="row-cell" id="stats-container">
+            <h2>Stats</h2>
+        </div>
+        <p>
+            <span> <b>HitPoints:</b> </span>&nbsp;
+            <span id="hitpoints">0</span>&nbsp;
+            <span id="max-hitpoints">0</span>&nbsp;
+        </p>
+        <p>
+            <span> <b>Moves:</b> </span>&nbsp;
+            <span id="moves">0</span>
+        </p>
+    </div>
+    <script src="bootstrap.js"></script>
+</body>
+</html>
